@@ -1,0 +1,103 @@
+### Json data 다루기
+
+
+
+
+
+
+
+```json
+{
+    "result": "200",
+    "resultMessage": "SUCCESS",
+    "totalCount": 3908,
+    "resultCount": 3908,
+    "pageSize": 100,
+    "pageCount": 40,
+    "currentPage": 101,
+    "items": [
+        {
+            "alltag": "체험,공용주차장,화장실,무료 WIFI",
+            "contentsid": "CNTS_000000000022310",
+            "contentscd": {
+                "value": "c2",
+                "label": "쇼핑",
+                "refId": "contentscd>c2"
+            },
+            "title": "다나한한복 앤 러블리베베",
+            "region1cd": {
+                "value": "region1",
+                "label": "제주시",
+                "refId": "region>region1"
+            },
+            "region2cd": {
+                "value": "11",
+                "label": "제주시내",
+                "refId": "region1>11"
+            },
+            "address": "제주특별자치도 제주시 도남동 81-10",
+            "roadaddress": "제주특별자치도 제주시 연삼로 355",
+            "tag": "체험,쇼핑,관광기념품,상점/상가",
+            "introduction": "웨딩한복, 혼주한복, 돌잔치 가족한복 등 제주한복대여 및 맞춤 전문점",
+            "latitude": 33.492897,
+            "longitude": 126.53028,
+            "postcode": "63205",
+            "phoneno": "064-722-0022",
+            "repPhoto": {
+                "descseo": "Danahan Hanbok & Lovely Bebe",
+                "photoid": {
+                    "photoid": 13998,
+                    "imgpath": "https://api.cdn.visitjeju.net/photomng/imgpath/201804/30/504e2747-9129-41cc-94d8-3e40cd38d8b5.jpg",
+                    "thumbnailpath": "https://api.cdn.visitjeju.net/photomng/thumbnailpath/201804/30/acea75e3-96fe-4c31-b0b6-d8cc5f40c269.jpg"
+                }
+            }
+        },
+        {
+            "alltag": "불량식품,과자,쇼핑",
+            "contentsid": "CNTS_200000000008039",
+            "contentscd": {
+                "value": "c2",
+                "label": "쇼핑",
+                "refId": "contentscd>c2"
+            },
+            "title": "승희상회",
+            "region1cd": {
+                "value": "region1",
+                "label": "제주시",
+                "refId": "region>region1"
+            },
+            "region2cd": {
+                "value": "16",
+                "label": "구좌",
+                "refId": "region1>16"
+            },
+            "address": "제주특별자치도 제주시 구좌읍 종달리 826-3",
+            "roadaddress": "제주특별자치도 제주시 구좌읍 종달로5길 32-1",
+            "tag": "불량식품,과자,쇼핑,관광기념품,상점/상가",
+            "introduction": "어릴 적 추억을 떠올리게 하는 작은 가게\n",
+            "latitude": 33.4924926,
+            "longitude": 126.8970535,
+            "postcode": null,
+            "phoneno": "064-783-3237",
+            "repPhoto": {
+                "descseo": "승희상회",
+                "photoid": {
+                    "photoid": 2018052311684,
+                    "imgpath": "https://api.cdn.visitjeju.net/photomng/imgpath/201812/20/0c0d2e39-fdff-4f79-95e7-8e01da7b8696.JPG",
+                    "thumbnailpath": "https://api.cdn.visitjeju.net/photomng/thumbnailpath/201812/20/3d0e3c09-f1a5-4f26-80eb-6124767ba47f.JPG"
+                }
+            }
+        },
+        
+        ...
+    ]
+}
+```
+
+
+
+공공데이터인 visitjeju에서 API 키를 받아 REST API request 보낸 후 response 받은 파일이다.
+
+승인받은 후 사용가능하기 때문에 Json data 일부만 올린다.
+
+https://www.visitjeju.net/kr/visitjejuapi
