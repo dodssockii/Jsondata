@@ -4,7 +4,7 @@
 
 
 
-
+jejudata.json
 
 ```json
 {
@@ -98,6 +98,6 @@
 
 공공데이터인 visitjeju에서 API 키를 받아 REST API request 보낸 후 response 받은 파일이다.
 
-승인받은 후 사용가능하기 때문에 Json data 일부만 올린다.
+승인받은 후 사용가능하기 때문에 Json data 일부이다.
 
-https://www.visitjeju.net/kr/visitjejuapi
+visitjeju site - https://www.visitjeju.net/kr/visitjejuapi
