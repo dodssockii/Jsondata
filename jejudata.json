@@ -1,14 +1,3 @@
-## Json data 다루기
-
-
-
-
-
-#### 📜 Json data 구조 (jejudata.json)
-
-
-
-```json
 {
     "result": "200",
     "resultMessage": "SUCCESS",
@@ -54,29 +43,43 @@
                 }
             }
         },
+        {
+            "alltag": "불량식품,과자,쇼핑",
+            "contentsid": "CNTS_200000000008039",
+            "contentscd": {
+                "value": "c2",
+                "label": "쇼핑",
+                "refId": "contentscd>c2"
+            },
+            "title": "승희상회",
+            "region1cd": {
+                "value": "region1",
+                "label": "제주시",
+                "refId": "region>region1"
+            },
+            "region2cd": {
+                "value": "16",
+                "label": "구좌",
+                "refId": "region1>16"
+            },
+            "address": "제주특별자치도 제주시 구좌읍 종달리 826-3",
+            "roadaddress": "제주특별자치도 제주시 구좌읍 종달로5길 32-1",
+            "tag": "불량식품,과자,쇼핑,관광기념품,상점/상가",
+            "introduction": "어릴 적 추억을 떠올리게 하는 작은 가게\n",
+            "latitude": 33.4924926,
+            "longitude": 126.8970535,
+            "postcode": null,
+            "phoneno": "064-783-3237",
+            "repPhoto": {
+                "descseo": "승희상회",
+                "photoid": {
+                    "photoid": 2018052311684,
+                    "imgpath": "https://api.cdn.visitjeju.net/photomng/imgpath/201812/20/0c0d2e39-fdff-4f79-95e7-8e01da7b8696.JPG",
+                    "thumbnailpath": "https://api.cdn.visitjeju.net/photomng/thumbnailpath/201812/20/3d0e3c09-f1a5-4f26-80eb-6124767ba47f.JPG"
+                }
+            }
+        },
         
         ...
-        
     ]
 }
-```
-
-
-
-공공데이터인 비짓제주에서 API 키를 받아 REST API request 보낸 후 response로 받은 Json 파일이다.
-
-승인받은 후 사용가능하기 때문에 Json data 일부(2개의 items)이다.
-
-비짓제주 사이트 - https://www.visitjeju.net/kr/visitjejuapi
-
-
-
-#### 📂 설명
-
-- data_processing.py : json 라이브러리를 이용하여 필요한 Json data를 가져온다. "address" key에서 "제주특별자치도" 문자열을 제외한 나머지 주소만 가져온다.
-
-- mysql_conn_origin.py : pymysql 라이브러리를 이용하여  mysql 데이터베이스와 연결하고 select 한다.
-- mysqlconn.py : 필요한 Json data를 mysql 데이터베이스에 적재시킨다.
-
-
-
